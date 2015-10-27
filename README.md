@@ -61,4 +61,4 @@ just that we'll ensure compatibility with the ones mentioned above.*
 
 ## License
 
-The code is available under the [GNU GENERAL PUBLIC LICENSE Version 3](LICENSE.txt).
+The code is available under the [GNU GENERAL PUBLIC LICENSE Version 3](LICENSE).
