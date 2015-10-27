@@ -21,12 +21,29 @@ Choose one of the following options:
    https://github.com/JoomGap/JGBoilerplate.git` - and checkout the
    [tagged release](https://github.com/JoomGap/JGBoilerplate/releases)
    you'd like to use.
+3. Create a new App in [PhoneGap build](https://build.phonegap.com).
+4. Build and download APK (Android) or IPA (iOS) file.
+5. Copy the file to your mobile phone and install it.
+6. Have fun!
 
+### Installation Step 1 - Android
+
+![Installation Step 1 - Android](http://cdn.joomgap.com/images/JGBoilerplate/JGBoilerplate-1-install.jpg)
+
+### Installation Step 2 - Android
+
+![Installation Step 2 - Android](http://cdn.joomgap.com/images/JGBoilerplate/JGBoilerplate-2-install.jpg)
+
+### Welcome screen - Android
+
+![Welcome screen - Android](http://cdn.joomgap.com/images/JGBoilerplate/JGBoilerplate-3-start.jpg)
+    
 ## Features
 
 * Cordoba/PhoneGap mobile application.
 * Includes:
   * Cordoba/PhoneGap project
+  * PhoneGap (iOS / Android / Windows)
   * [PhoneGap build](https://build.phonegap.com)-ready configuration
   * AngularJS
   * AngularJS Animate
