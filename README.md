@@ -26,18 +26,56 @@ Choose one of the following options:
 5. Copy the file to your mobile phone and install it.
 6. Have fun!
 
-### Installation Step 1 - Android
+## How to integrate JG Boilerplate with Joomla! CMS
 
-![Installation Step 1 - Android](http://cdn.joomgap.com/images/JGBoilerplate/JGBoilerplate-1-install.jpg)
+JG Boilerplate includes [JoomGap Simple Library](https://github.com/JoomGap/JGSimple) to integrate Joomla! CMS.
 
-### Installation Step 2 - Android
+A call to Joomla! can be simply implemented in this way:
 
-![Installation Step 2 - Android](http://cdn.joomgap.com/images/JGBoilerplate/JGBoilerplate-2-install.jpg)
+	q = jgSimpleApi.get(url, params).$promise;
+	q.then(function(response) {
+		if ( (response) && (response.success) ) {
+			console.log(response.data);
+		}
+	}
+	
+## Concerning to security measures
 
-### Welcome screen - Android
+There are multiple security measures on browsers and server to prevent abuse. 
 
-![Welcome screen - Android](http://cdn.joomgap.com/images/JGBoilerplate/JGBoilerplate-3-start.jpg)
-    
+In a Cordoba/PhoneGap mobile app, a mobile brower speaks with a web server with Joomla! CMS. Then, there are at least three security layers:
+
+- Mobile browser
+- Web server
+- Joomla! CMS
+
+> JG Boilerplater is mainly oriented for development. So, a permissive security policy has been implemented.
+
+### Production security policy
+
+This is a checklist of security items to evaluate before publishing an app:
+
+- Latest Cordoba/PhoneGap version
+- Required plugins
+- android:debuggable="false", to disable Android debugging
+- Required device permissions
+- [HTTP access control (CORS)](http://www.html5rocks.com/en/tutorials/cors/)
+	- access origin
+- [Whitelist policy](https://github.com/apache/cordova-plugin-whitelist#cordova-plugin-whitelist)	
+	- allow-intent
+	- allow-navigation
+	- allow-intent 
+- [Content-Security-Policy](http://www.html5rocks.com/en/tutorials/security/content-security-policy/)
+- AngularJS
+	- $logProvider.debugEnabled(false);
+	- $compileProvider.debugInfoEnabled(false);
+	
+### Joomla and Cross-Origin Resource Sharing (CORS)
+
+The same security points have to be evaluated to allow access from a different security domain that the source site domain.
+
+JG Boilerplate opens connections via [JSON-P](http://en.wikipedia.org/wiki/JSONP) to standard Joomla! sites. In [JoomGap Simple Library](https://github.com/JoomGap/JGSimple), connections are handled with [AngularJS $resource](https://docs.angularjs.org/api/ngResource/service/$resource).
+
 ## Features
 
 * Cordoba/PhoneGap mobile application.
@@ -68,13 +106,27 @@ Updating Ionic. Update bower.json, driftyco/ionic-bower#....
 
 	gulp install
 
-## OS support
+## Mobile operating system support
 
 * Android 4 and 5
 * Apple iOS 8 and 9
 
 *This doesn't mean that JoomGap Boilerplate cannot be used in older OS,
 just that we'll ensure compatibility with the ones mentioned above.*
+
+## Screenshots
+
+### Installation Step 1 - Android
+
+![Installation Step 1 - Android](http://cdn.joomgap.com/images/JGBoilerplate/JGBoilerplate-1-install.jpg)
+
+### Installation Step 2 - Android
+
+![Installation Step 2 - Android](http://cdn.joomgap.com/images/JGBoilerplate/JGBoilerplate-2-install.jpg)
+
+### Welcome screen - Android
+
+![Welcome screen - Android](http://cdn.joomgap.com/images/JGBoilerplate/JGBoilerplate-3-start.jpg)
 
 ## License
 
