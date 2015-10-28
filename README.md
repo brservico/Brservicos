@@ -16,7 +16,7 @@ way that you want.
 Choose one of the following options:
 
 1. Download the latest stable release from
-   [joomgap.com](https://joomgap.com/).
+   [joomgap.com](http://www.joomgap.com/joomgap-boilerplate.html).
 2. Clone the git repo — `git clone
    https://github.com/JoomGap/JGBoilerplate.git` - and checkout the
    [tagged release](https://github.com/JoomGap/JGBoilerplate/releases)
