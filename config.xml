@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <widget id="com.ionicframework.jgboilerplate" 
 	version="1.1.0"
 	xmlns="http://www.w3.org/ns/widgets" 
@@ -42,9 +42,10 @@
 	<preference name="AutoHideSplashScreen" value="true" />  
 	
     <!-- Ionic Framework -->
-    <preference name="UIWebViewBounce" value="false"/>
-    <preference name="DisallowOverscroll" value="true"/>
-    <preference name="BackupWebStorage" value="none"/>    
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="BackupWebStorage" value="none" />        
     
 	
     <gap:plugin name="cordova-plugin-console" version="1.0.2" source="npm" />
