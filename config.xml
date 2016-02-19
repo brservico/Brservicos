@@ -44,7 +44,6 @@
     <!-- Ionic Framework -->
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="16" />
     <preference name="BackupWebStorage" value="none" />        
     
 	
