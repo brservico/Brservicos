@@ -52,9 +52,9 @@
     <gap:plugin name="cordova-plugin-device-orientation" version="1.0.2" source="npm" />
     <gap:plugin name="cordova-plugin-dialogs" version="1.2.0" source="npm" />
     <gap:plugin name="cordova-plugin-globalization" version="1.0.2" source="npm" />
-    <gap:plugin name="cordova-plugin-inappbrowser" version="1.2.1" source="npm" />
+    <gap:plugin name="cordova-plugin-inappbrowser" version="1.3.0" source="npm" />
     <gap:plugin name="cordova-plugin-network-information" version="1.2.0" source="npm" />
-    <gap:plugin name="cordova-plugin-splashscreen" version="3.0.0" source="npm" />
+    <gap:plugin name="cordova-plugin-splashscreen" version="3.2.0" source="npm" />
     <gap:plugin name="cordova-plugin-whitelist" version="1.2.1" source="npm" />
 
     <gap:plugin name="ionic-plugin-keyboard" version="1.0.8" source="npm" />	
