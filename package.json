@@ -1,6 +1,6 @@
 {
   "name": "jgboilerplate",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A JoomGap starter project to create a hybrid mobile app for Joomla! CMS, powered by Cordova/PhoneGap, AngularJS and Ionic.",
   "dependencies": {
     "gulp": "^3.5.6",
