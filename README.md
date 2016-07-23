@@ -1,6 +1,8 @@
 # [JoomGap Boilerplate](http://www.joomgap.com/)
 
-A JoomGap starter project to create a hybrid mobile app for Joomla! CMS, powered by Cordova/PhoneGap, AngularJS and Ionic.
+JGBoilerplate: the simplest JoomGap app template.
+
+JoomGap Boilerplate is a starter project to create a hybrid mobile app for Joomla! CMS, powered by Cordova/PhoneGap, AngularJS and Ionic.
 
 This project is the product of many years of iterative development and
 combined community knowledge from open source projects. It does not impose a specific development
@@ -17,11 +19,9 @@ Choose one of the following options:
 
 1. Download the latest stable release from
    [joomgap.com](http://www.joomgap.com/joomgap-boilerplate.html).
-2. Clone the git repo — `git clone
-   https://github.com/JoomGap/JGBoilerplate.git` - and checkout the
-   [tagged release](https://github.com/JoomGap/JGBoilerplate/releases)
-   you'd like to use.
-3. Create a new App in [PhoneGap build](https://build.phonegap.com).
+2. Or, clone the git repo — `git clone
+   https://github.com/JoomGap/JGBoilerplate.git`
+3. Create a new app in [PhoneGap build](https://build.phonegap.com).
 4. Build and download APK (Android) or IPA (iOS) file.
 5. Copy the file to your mobile phone and install it.
 6. Have fun!
@@ -32,49 +32,15 @@ JG Boilerplate includes [JoomGap Simple Library](https://github.com/JoomGap/JGSi
 
 A call to Joomla! can be simply implemented in this way:
 
-	q = jgSimpleApi.get(url, params).$promise;
-	q.then(function(response) {
-		if ( (response) && (response.success) ) {
-			console.log(response.data);
-		}
-	}
-	
-## Concerning to security measures
+    q = JgSimpleResource.get(url, params).$promise;
 
-There are multiple security measures on browsers and server to prevent abuse. 
+    q.then(function(response) {
+        if ( (response) && (response.success) ) {
+            console.log(response.data);
+        }
+    });
 
-In a Cordoba/PhoneGap mobile app, a mobile brower speaks with a web server with Joomla! CMS. Then, there are at least three security layers:
-
-- Mobile browser
-- Web server
-- Joomla! CMS
-
-> JG Boilerplater is mainly oriented for development. So, a permissive security policy has been implemented.
-
-### Production security policy
-
-This is a checklist of security items to evaluate before publishing an app:
-
-- Latest Cordoba/PhoneGap version
-- Required plugins
-- android:debuggable="false", to disable Android debugging
-- Required device permissions
-- [HTTP access control (CORS)](http://www.html5rocks.com/en/tutorials/cors/)
-	- access origin
-- [Whitelist policy](https://github.com/apache/cordova-plugin-whitelist#cordova-plugin-whitelist)	
-	- allow-intent
-	- allow-navigation
-	- allow-intent 
-- [Content-Security-Policy](http://www.html5rocks.com/en/tutorials/security/content-security-policy/)
-- AngularJS
-	- $logProvider.debugEnabled(false);
-	- $compileProvider.debugInfoEnabled(false);
-	
-### Joomla and Cross-Origin Resource Sharing (CORS)
-
-The same security points have to be evaluated to allow access from a different security domain that the source site domain.
-
-JG Boilerplate opens connections via [JSON-P](http://en.wikipedia.org/wiki/JSONP) to standard Joomla! sites. In [JoomGap Simple Library](https://github.com/JoomGap/JGSimple), connections are handled with [AngularJS $resource](https://docs.angularjs.org/api/ngResource/service/$resource).
+>>>>> Even though JG Simple Library is included to open a connect to Joomla! CMS, it still requires a server-side service, with an API, to access and provide any functionality. For instance, [JG JEDStarter](http://www.joomgap.com/docs/basics/jedstarter) implements a similar app based on JED's "Install from Web" service.
 
 ## Features
 
@@ -89,7 +55,7 @@ JG Boilerplate opens connections via [JSON-P](http://en.wikipedia.org/wiki/JSONP
   * AngularJS Sanitize
   * AngularJS UI Router
   * [JoomGap Simple Library](https://github.com/JoomGap/JGSimple)
-  * Ionic Framworks
+  * Ionic Framework
   * ngCordova
 
 ## Useful Commands
@@ -108,7 +74,7 @@ Updating Ionic. Update bower.json, driftyco/ionic-bower#....
 
 ## Mobile operating system support
 
-* Android 4 and 5
+* Android 5 and 6
 * Apple iOS 8 and 9
 
 *This doesn't mean that JoomGap Boilerplate cannot be used in older OS,
@@ -131,3 +97,19 @@ just that we'll ensure compatibility with the ones mentioned above.*
 ## License
 
 The code is available under the [GNU GENERAL PUBLIC LICENSE Version 3](LICENSE).
+
+## Feedback
+
+We welcome feedback! Leave a comment by clicking the icon in upper right corner of the banner.
+
+* [We are always open for a quick chat!](http://www.joomgap.com/more/contact-us.html)
+* [Facebook](https://twitter.com/joomgap)
+* [Twitter](https://www.facebook.com/joomgap)
+* [RSS](http://www.joomgap.com/more/blog.feed?type=rss)
+* Post issues and pull requests on JoomGap github repositories.
+
+## Copyright
+
+Copyright © 2007-2016 [Extly Extensions](http://www.extly.com/) - All Rights Reserved.
+
+Joomla! name is used under a limited license from Open Source Matters in the United States and other countries. Extly.com is not affiliated with or endorsed by Open Source Matters or the Joomla! project.
