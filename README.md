@@ -33,14 +33,14 @@ JG Boilerplate includes [JoomGap Simple Library](https://github.com/JoomGap/JGSi
 A call to Joomla! can be simply implemented in this way:
 
     q = JgSimpleResource.get(url, params).$promise;
-
+z
     q.then(function(response) {
         if ( (response) && (response.success) ) {
             console.log(response.data);
         }
     });
 
->>>>> Even though JG Simple Library is included to open a connect to Joomla! CMS, it still requires a server-side service, with an API, to access and provide any functionality. For instance, [JG JEDStarter](http://www.joomgap.com/docs/basics/jedstarter) implements a similar app based on JED's "Install from Web" service.
+> Even though JG Simple Library is included to open a connection to Joomla! CMS, it still requires a server-side service, with an API, to access and provide any functionality. For instance, [JG JEDStarter](http://www.joomgap.com/docs/basics/jedstarter) implements a similar app based on JED's "Install from Web" service.
 
 ## Features
 
