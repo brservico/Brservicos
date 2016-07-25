@@ -1,6 +1,4 @@
-# [JoomGap Boilerplate](http://www.joomgap.com/)
-
-JGBoilerplate: the simplest JoomGap app template.
+# [JoomGap Boilerplate](http://www.joomgap.com/starters.html)
 
 JoomGap Boilerplate is a starter project to create a hybrid mobile app for Joomla! CMS, powered by Cordova/PhoneGap, AngularJS and Ionic.
 
@@ -26,21 +24,21 @@ Choose one of the following options:
 5. Copy the file to your mobile phone and install it.
 6. Have fun!
 
-## How to integrate JG Boilerplate with Joomla! CMS
+## How to integrate Joomla! CMS
 
 JG Boilerplate includes [JoomGap Simple Library](https://github.com/JoomGap/JGSimple) to integrate Joomla! CMS.
 
 A call to Joomla! can be simply implemented in this way:
 
     q = JgSimpleResource.get(url, params).$promise;
-z
+
     q.then(function(response) {
         if ( (response) && (response.success) ) {
             console.log(response.data);
         }
     });
 
-> Even though JG Simple Library is included to open a connection to Joomla! CMS, it still requires a server-side service, with an API, to access and provide any functionality. For instance, [JG JEDStarter](http://www.joomgap.com/docs/basics/jedstarter) implements a similar app based on JED's "Install from Web" service.
+>>>>> Even though JG Simple Library is included to open a connect to Joomla! CMS, it still requires a server-side service, with an API, to access and provide any functionality. For instance, [JG JEDStarter](http://www.joomgap.com/docs/basics/jedstarter) implements a similar app based on JED's "Install from Web" service.
 
 ## Features
 
@@ -77,7 +75,7 @@ Updating Ionic. Update bower.json, driftyco/ionic-bower#....
 * Android 5 and 6
 * Apple iOS 8 and 9
 
-*This doesn't mean that JoomGap Boilerplate cannot be used in older OS,
+*This doesn't mean that it cannot be used in older OS,
 just that we'll ensure compatibility with the ones mentioned above.*
 
 ## Screenshots
